@@ -17,25 +17,28 @@
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 <div class="content">
-    <input type="checkbox" id="chk" aria-hidden="true">
+    <a href="#"><img width=200px; src="https://www.freepnglogos.com/uploads/sbi-logo-png/sbi-logo-state-bank-india-group-vector-eps-0.png" alt="logo"></a>
+ <div class="main">  
+    <input type="checkbox" id="chk" aria-hidden="true">	
         <div for="signup" class="signup">
             <form class="loginform">
                 <label for="chk" aria-hidden="true">Login</label>
-                <input type="email" name="email" placeholder="Email" required="">
-                <input type="password" name="pswd" placeholder="Password" required="">
-                <button>Login</button>
+                <input id="usName" type="email" name="email" placeholder="Email" required="">
+                <input id="paswd" type="password" name="pswd" placeholder="Password" required="">
+                <button onclick="signin()">Login</button>
                 <h5 class="mt-3">Dont Have Account?</h5>
             </form>
         </div>
         <div for="login" class="login">
             <form id="signupform">
                 <label for="chk" aria-hidden="true">Sign up</label>
-                <input type="text" name="txt" placeholder="User name" required="">
-                <input type="email" name="email" placeholder="Email" required="">
-                <input type="password" name="pswd" placeholder="Password" required="">
-                <button>Sign up</button>
+                <input type="text" id="userName" name="txt" placeholder="User name" required="">
+                <input type="email" id="email" name="email" placeholder="Email" required="">
+                <input type="password" id="password" name="pswd" placeholder="Password" required="">
+                <button onclick="regiter()">Sign up</button>
             </form>
         </div>
 </div>  
 </body>
+<script src="./main.js"></script>
 </html>
